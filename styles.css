@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: rgb(220, 220, 220);
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    font-family: sans-serif;
+}
+
+.banner h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banner hr {
+    margin-inline: 0;
+    padding: 0;
+}
+
+.specialty {
+    position: relative;
+    text-align: center;
+    margin-top: 0.8em;
+}
+
+.specialty p {
+    display: inline;
+    font-size: 2rem;
+}
