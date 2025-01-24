@@ -10,6 +10,7 @@ body {
 
 .welcome {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -143,4 +144,8 @@ body {
     font-size: 2rem;
     margin-bottom: 2rem;
     /* 與卡片的間距 */
+}
+
+#cards {
+    border: rgba(0, 0, 0, 50) 1px solid;
 }
