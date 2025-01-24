@@ -113,12 +113,11 @@ body {
     /* 水平方向居中 */
 }
 
-#sd2::before,
-#sd2::after,
-#sd3::before,
-#sd3::after {
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
+/* 深色主題（黑色箭頭） */
+.light-theme .scroll-down::before,
+.light-theme .scroll-down::after {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .experience {
