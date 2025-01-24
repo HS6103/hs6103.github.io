@@ -51,10 +51,10 @@ body {
 
 .scroll-down {
     position: absolute;
-    border: transparent;
+    left: 50%;
     bottom: 5.5%;
+    border: transparent;
     /* 距離底部的間距 */
-
 }
 
 .scroll-down:hover {
@@ -99,6 +99,7 @@ body {
 }
 
 .portofolio {
+    position: relative;
     display: flex;
     width: 100%;
     height: 100vh;
@@ -110,6 +111,14 @@ body {
     /* 標題靠近容器頂部 */
     align-items: center;
     /* 水平方向居中 */
+}
+
+#sd2::before,
+#sd2::after,
+#sd3::before,
+#sd3::after {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .experience {
@@ -138,6 +147,7 @@ body {
 
 .title {
     position: relative;
+    /*讓子元素的位置有參考點*/
     top: 2vh;
     /* 確保標題距離容器頂部 5vh */
     font-family: sans-serif;
