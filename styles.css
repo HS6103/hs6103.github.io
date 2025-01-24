@@ -113,7 +113,7 @@ body {
     /* 水平方向居中 */
 }
 
-/* 深色主題（黑色箭頭） */
+/* 淺色主題（黑色箭頭） */
 .light-theme .scroll-down::before,
 .light-theme .scroll-down::after {
     border-right: 2px solid black;
