@@ -8,6 +8,14 @@ body {
     height: 100vh;
 }
 
+.banner-container {
+    transition: transform .5s;
+}
+
+.banner-container:hover {
+    transform: scale(1.02) perspective(0px);
+}
+
 .welcome {
     display: flex;
     flex-wrap: nowrap;
@@ -30,7 +38,6 @@ body {
     font-size: 4rem;
     margin: 0;
     padding: 0;
-
 }
 
 .banner hr {
@@ -147,14 +154,30 @@ body {
 .title {
     position: relative;
     /*讓子元素的位置有參考點*/
-    top: 2vh;
-    /* 確保標題距離容器頂部 5vh */
+    top: 2.5vh;
+    /* 確保標題距離容器頂部 2.5vh */
+    padding: 0;
+    margin-top: 0;
     font-family: sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
     /* 與卡片的間距 */
 }
 
-#cards {
+.cards {
+    position: relative;
+    display: flex;
+    top: 0.5vh;
+    justify-content: center;
+    align-items: center;
     border: rgba(0, 0, 0, 50) 1px solid;
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    transition: transform .5s, box-shadow 1s;
+}
+
+.cards:hover {
+    transform: scale(1.02) perspective(0px);
+    box-shadow: 0 10px 10px 0 #3a3d40;
 }
