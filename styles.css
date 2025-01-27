@@ -9,7 +9,7 @@ body {
 }
 
 .flex-container {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
