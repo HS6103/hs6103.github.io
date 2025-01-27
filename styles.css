@@ -167,6 +167,7 @@ body {
 .cards {
     position: relative;
     display: flex;
+    flex-wrap: nowrap;
     top: 0.5vh;
     justify-content: center;
     align-items: center;
@@ -180,4 +181,9 @@ body {
 .cards:hover {
     transform: scale(1.02) perspective(0px);
     box-shadow: 0 10px 10px 0 #3a3d40;
+}
+
+.contact footer {
+    position: absolute;
+    bottom: 2%;
 }
