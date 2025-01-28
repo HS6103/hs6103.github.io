@@ -188,13 +188,30 @@ body {
     box-shadow: 0 10px 10px 0 #3a3d40;
 }
 
-.contact footer {
+.contact .footer {
     position: absolute;
-    bottom: 2%;
+    bottom: 1.5%;
+
+}
+
+.contact .btt {
+    color: #000;
+    text-decoration: none;
 }
 
 .contact .cards {
     flex-wrap: nowrap;
+    height: 15%;
+    margin-bottom: 1%;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.contact .cards:visited {
+    flex-wrap: nowrap;
     height: 10%;
     margin-bottom: 2%;
+    text-decoration: none;
+    color: #000;
 }
