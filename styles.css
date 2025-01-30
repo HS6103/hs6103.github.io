@@ -173,6 +173,12 @@ body {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
+    /* Align items in a row */
+    align-items: center;
+    /* Align items vertically */
+    gap: 10px;
+    /* Add spacing between image and text */
     top: 0.5vh;
     justify-content: center;
     align-items: center;
@@ -180,7 +186,7 @@ body {
     width: 40%;
     height: 60%;
     text-align: center;
-    transition: transform .5s, box-shadow 1s;
+    transition: transform .5s, box-shadow 1s, font-size .5s;
 }
 
 .cards:hover {
@@ -191,27 +197,42 @@ body {
 .contact .footer {
     position: absolute;
     bottom: 1.5%;
-
 }
 
+/* back to top */
 .contact .btt {
     color: #000;
     text-decoration: none;
 }
 
 .contact .cards {
-    flex-wrap: nowrap;
     height: 15%;
     margin-bottom: 1%;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 1em;
+    text-align: center;
 }
 
-.contact .cards:visited {
+.contact .cards:hover {
+    font-size: larger;
+}
+
+.contact .cards:visited,
+a[href^="mailto:"] {
     flex-wrap: nowrap;
     height: 10%;
     margin-bottom: 2%;
     text-decoration: none;
     color: #000;
+}
+
+.contact .cards img {
+    position: relative;
+    height: 3.5em;
+}
+
+.contact-text {
+    position: relative;
+    width: 3.5em;
 }
