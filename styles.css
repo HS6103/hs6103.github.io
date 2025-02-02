@@ -27,6 +27,7 @@ body {
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     font-family: sans-serif;
+    border-bottom: #3a3d40;
 }
 
 .banner {
@@ -123,6 +124,13 @@ body {
     /* 標題靠近容器頂部 */
     align-items: center;
     /* 水平方向居中 */
+    border-bottom: #3a3d40 1px solid;
+
+}
+
+.portofolio .cards {
+    top: 5vh;
+    height: 60%;
 }
 
 /* 淺色主題（黑色箭頭） */
@@ -177,14 +185,10 @@ body {
     /* Align items in a row */
     align-items: center;
     /* Align items vertically */
-    gap: 10px;
-    /* Add spacing between image and text */
-    top: 0.5vh;
     justify-content: center;
     align-items: center;
     border: rgba(0, 0, 0, 50) 1px solid;
     width: 40%;
-    height: 60%;
     text-align: center;
     transition: transform .5s, box-shadow 1s, font-size .5s;
 }
@@ -206,12 +210,17 @@ body {
 }
 
 .contact .cards {
+    gap: 10px;
+    /* Add spacing between image and text */
+    top: 0.5vh;
     height: 15%;
     margin-bottom: 1%;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
+    color: #000;
 }
 
 .contact .cards:hover {
@@ -223,8 +232,7 @@ a[href^="mailto:"] {
     flex-wrap: nowrap;
     height: 10%;
     margin-bottom: 2%;
-    text-decoration: none;
-    color: #000;
+
 }
 
 .contact .cards img {
