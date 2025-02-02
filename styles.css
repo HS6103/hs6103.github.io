@@ -158,6 +158,12 @@ body {
     width: 50%;
 }
 
+.experience .cards img {
+    position: relative;
+    height: 90%;
+
+}
+
 .contact {
     display: flex;
     flex-direction: column;
