@@ -152,6 +152,12 @@ body {
     position: relative;
 }
 
+.experience .cards {
+    top: 8vh;
+    height: 60%;
+    width: 50%;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -190,6 +196,8 @@ body {
     border: rgba(0, 0, 0, 50) 1px solid;
     width: 40%;
     text-align: center;
+    text-decoration: none;
+    color: #000;
     transition: transform .5s, box-shadow 1s, font-size .5s;
 }
 
@@ -219,20 +227,17 @@ body {
     font-family: sans-serif;
     font-size: 1em;
     text-align: center;
-    text-decoration: none;
-    color: #000;
 }
 
 .contact .cards:hover {
     font-size: larger;
 }
 
-.contact .cards:visited,
+.cards:visited,
 a[href^="mailto:"] {
     flex-wrap: nowrap;
     height: 10%;
     margin-bottom: 2%;
-
 }
 
 .contact .cards img {
