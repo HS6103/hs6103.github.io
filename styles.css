@@ -65,9 +65,12 @@ body {
 }
 
 .scroll-down {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     position: absolute;
-    left: 50%;
-    bottom: 5.5%;
+    height: 5.5%;
+    bottom: 0;
     border: transparent;
     /* 距離底部的間距 */
 }
@@ -138,7 +141,19 @@ body {
 .portfolio .cards {
     width: auto;
     height: 50dvh;
-    border-radius: 5%
+    border-radius: 5%;
+    color: rgb(220, 220, 220);
+    background-color: #212121;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.portfolio .cards h3 {
+    margin-bottom: 1em;
+}
+
+.portfolio .cards:hover {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
 }
 
 /* 淺色主題（黑色箭頭） */
