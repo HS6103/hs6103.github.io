@@ -49,6 +49,8 @@ body {
 .banner hr {
     margin-inline: 0;
     padding: 0;
+    border: 1px solid white;
+
 }
 
 .specialty {
@@ -128,9 +130,15 @@ body {
 
 }
 
+.portfolio .row {
+    margin-top: 10dvh;
+    justify-content: center;
+}
+
 .portfolio .cards {
-    top: 5vh;
-    height: 60%;
+    width: auto;
+    height: 50dvh;
+    border-radius: 5%
 }
 
 /* 淺色主題（黑色箭頭） */
@@ -150,6 +158,8 @@ body {
     /* 水平方向居中 */
     height: 100vh;
     position: relative;
+    border-bottom: #3a3d40 1px solid;
+
 }
 
 .experience .cards {
@@ -229,17 +239,20 @@ body {
 .cards:hover {
     transform: scale(1.02) perspective(0px);
     box-shadow: 0 10px 10px 0 #3a3d40;
-}
-
-.contact .footer {
-    position: absolute;
-    bottom: 1.5%;
+    text-decoration: none;
+    color: #000;
 }
 
 /* back to top */
 .contact .btt {
+    position: absolute;
+    display: flex;
+    bottom: 1.5%;
+    justify-content: center;
+    width: 100%;
     color: #000;
     text-decoration: none;
+    width: 100%;
 }
 
 .contact .cards {
@@ -261,7 +274,6 @@ body {
 .cards:visited,
 a[href^="mailto:"] {
     flex-wrap: nowrap;
-    height: 10%;
     margin-bottom: 2%;
 }
 
